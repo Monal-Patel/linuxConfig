@@ -1,0 +1,11 @@
+#%Module########################################################################
+##
+## null modulefile
+##
+proc ModulesHelp { } {
+    puts stderr "	This module does absolutely nothing."
+    puts stderr "	It's meant simply as a place holder in your"
+    puts stderr "	dot file initialization."
+}
+
+module-whatis   "does absolutely nothing"
