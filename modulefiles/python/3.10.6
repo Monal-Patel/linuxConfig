@@ -1,0 +1,17 @@
+#%Module########################################################################
+##
+## Python3 modulefile
+##
+proc ModulesHelp { } {
+        global version
+        puts stderr "\tSets up environment for python v$version,"
+}
+
+module-whatis   "sets up environment for python 3.10.6"
+
+# variables
+set     version 3.10.6
+
+prepend-path	PATH		/usr/bin/python3
+
+set-alias "python" "python3"

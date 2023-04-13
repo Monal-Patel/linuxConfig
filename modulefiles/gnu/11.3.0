@@ -1,0 +1,22 @@
+#%Module########################################################################
+##
+## GCC modulefile
+##
+proc ModulesHelp { } {
+        global version
+        puts stderr "\tSets up environment for GNU Compiler Collection (GCC) v$version,"
+        puts stderr "\tfor gcc,g++ and gfortran."
+}
+
+module-whatis   "sets up environment for GCC v11.3.0"
+
+# variables
+set     version 11.3.0
+
+prepend-path	PATH		/usr/bin/gcc-11
+prepend-path	PATH		/usr/bin/g++-11
+prepend-path	PATH		/usr/bin/gfortran-11
+
+set-alias "gcc" "gcc-11"
+set-alias "g++" "g++-11"
+set-alias "gfortran" "gfortran-11"

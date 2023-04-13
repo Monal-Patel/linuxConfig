@@ -1,0 +1,17 @@
+#%Module########################################################################
+##
+## Python2 modulefile
+##
+proc ModulesHelp { } {
+        global version
+        puts stderr "\tSets up environment for python v$version,"
+}
+
+module-whatis   "sets up environment for python 2.7.18"
+
+# variables
+set     version 2.7.18
+
+prepend-path	PATH		/usr/bin/python2
+
+set-alias "python" "python2"
