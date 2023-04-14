@@ -1,0 +1,16 @@
+#%Module########################################################################
+##
+## CUDA modulefile
+##
+proc ModulesHelp { } {
+        global version
+        puts stderr "\tSets up environment for CUDA v$version,"
+}
+
+module-whatis   "sets up environment for CUDA 12.1"
+
+# variables
+set     version 12.1
+
+prepend-path	PATH		  /usr/local/cuda-12.1/bin
+prepend-path	LD_LIBRARY_PATH	  /usr/local/cuda-12.1/lib64

@@ -1,0 +1,11 @@
+#%Module########################################################################
+##
+## AMReX modulefile
+##
+proc ModulesHelp { } {
+        puts stderr "\tSets up environment for AMReX,"
+}
+
+module-whatis   "sets up environment for AMReX"
+
+module load cuda/12.1
