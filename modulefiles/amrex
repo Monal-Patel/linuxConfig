@@ -9,3 +9,5 @@ proc ModulesHelp { } {
 module-whatis   "sets up environment for AMReX"
 
 module load cuda/12.1
+
+setenv AMREX_HOME /home/monal/Documents/code/amrsolver/lib/amrex

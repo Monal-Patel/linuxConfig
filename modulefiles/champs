@@ -51,6 +51,10 @@ prepend-path  CPATH            $CHAMPS_DIR/tools/karma/utilities/include
 prepend-path  CPATH            $KARMA_EXEC_PATH/utilities/include
 prepend-path  LD_LIBRARY_PATH  $KARMA_EXEC_PATH/utilities/lib
 
+# CGNS
+prepend-path  CPATH            $CHAMPS_DIR/dependencies/CGNS-4.2.0/src
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/dependencies/CGNS-4.2.0/src/lib
+
 #dependent on python and gnu-9
 module load gnu/9.5.0
 module load python/2.7.18

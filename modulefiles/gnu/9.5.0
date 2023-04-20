@@ -17,6 +17,7 @@ prepend-path	PATH		/usr/bin/gcc-9
 prepend-path	PATH		/usr/bin/g++-9
 prepend-path	PATH		/usr/bin/gfortran-9
 
+set-alias "cc" "gcc-9"
 set-alias "gcc" "gcc-9"
 set-alias "g++" "g++-9"
 set-alias "gfortran" "gfortran-9"
