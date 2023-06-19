@@ -12,3 +12,11 @@ module use --append /home/monal/setup/modulefiles
 export MYVIMRC=~/setup/.vimrc
 
 alias wdc='cd ~/Documents/code/bitcart'
+
+alias paraview='~/Documents/software/paraview/bin/paraview'
+alias visit='~/Documents/software/visit/bin/visit'
+
+alias fastmake='make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make'
+
+alias vtune='source /opt/intel/oneapi/vtune/2023.1.0/env/vars.sh && sudo sysctl -w kernel.yama.ptrace_scope=0 && /opt/intel/oneapi/vtune/2023.1.0/bin64/vtune-gui'
+

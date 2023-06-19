@@ -1,0 +1,66 @@
+#%Module########################################################################
+##
+## CHAMPS modulefile
+##
+proc ModulesHelp { } {
+    puts stderr "This module adds environment variables for CHAMPS."
+    puts stderr "It is dependent on python2."
+}
+
+module-whatis   "sets up environment for CHAMPS"
+
+# local vars
+set CHAMPS_DIR  /home/monal/Documents/code/bitcart
+set KARMA_EXEC_PATH      $CHAMPS_DIR/tools/karma
+
+##### environement setup
+setenv CHAMPS_DIR           $CHAMPS_DIR 
+setenv BITCART_SOURCE_PATH  $CHAMPS_DIR/src
+# petsc
+setenv PETSC_ARCH           arch-linux2-c-debug
+setenv PETSC_DIR            $CHAMPS_DIR/dependencies/petsc-3.6.4
+# karma
+setenv KARMA_BUILD_DIR      $CHAMPS_DIR/tools/karma/utilities/build
+setenv FEM_SRC_DIR          $CHAMPS_DIR/tools/karma/utilities/src/fem
+setenv KARMA_UTIL_PATH      $CHAMPS_DIR/tools/karma/utilities
+setenv KARMA_EXEC_PATH      $CHAMPS_DIR/tools/karma
+# Emu
+setenv EMUPATH              $CHAMPS_DIR/tools/Emu
+setenv EMUBINPATH           $CHAMPS_DIR/tools/Emu/bin
+
+# openmpi
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/dependencies/openmpi-1.8.4/install/lib
+prepend-path  PATH             $CHAMPS_DIR/dependencies/openmpi-1.8.4/install/bin
+
+# hdf5
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/dependencies/hdf5-1.8.14/install/lib
+prepend-path  PATH             $CHAMPS_DIR/dependencies/hdf5-1.8.14/install/include
+prepend-path  CPATH            $CHAMPS_DIR/dependencies/hdf5-1.8.14/install/include
+
+# parmetis/metis
+prepend-path  CPATH            $CHAMPS_DIR/dependencies/parmetis-4.0.3/metis/install/include
+prepend-path  CPATH            $CHAMPS_DIR/dependencies/parmetis-4.0.3/install/include
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/dependencies/parmetis-4.0.3/metis/install/lib
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/dependencies/parmetis-4.0.3/install/lib
+
+# petsc
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/dependencies/petsc-3.6.4/arch-linux2-c-debug/lib
+prepend-path  PATH             $CHAMPS_DIR/dependencies/petsc-3.6.4/bin
+prepend-path  CPATH            $CHAMPS_DIR/dependencies/petsc-3.6.4/include
+prepend-path  CPATH            $CHAMPS_DIR/dependencies/petsc-3.6.4/arch-linux2-c-debug/include
+
+# karma
+#prepend-path  CPATH            $CHAMPS_DIR/tools/karma/utilities/include
+prepend-path  CPATH            $KARMA_EXEC_PATH/utilities/include
+prepend-path  LD_LIBRARY_PATH  $KARMA_EXEC_PATH/utilities/lib
+
+# CGNS
+prepend-path  CPATH            $CHAMPS_DIR/dependencies/CGNS-4.2.0/src
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/dependencies/CGNS-4.2.0/src/lib
+
+# Emu
+prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR/tools/Emu/bin
+
+#dependent on python and gnu-9
+module load gnu/9.5.0
+module load python/2.7.18
