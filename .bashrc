@@ -12,11 +12,16 @@ module use --append /home/monal/setup/modulefiles
 export MYVIMRC=~/setup/.vimrc
 
 alias wdc='cd ~/Documents/code/bitcart'
+alias wda='cd ~/Documents/code/amrsolver'
 
-alias paraview='~/Documents/software/paraview/bin/paraview'
-alias visit='~/Documents/software/visit/bin/visit'
+alias zaratan='ssh mpatel38@login.zaratan.umd.edu'
 
-alias fastmake='make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make'
+alias paraview='/media/monal/main/software/paraview/bin/paraview'
+alias visit='/media/monal/main/software/visit/bin/visit'
+alias jabref='/media/monal/main/software/jabref/bin/JabRef'
+
+alias fastmake='make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make'
 
 alias vtune='source /opt/intel/oneapi/vtune/2023.1.0/env/vars.sh && sudo sysctl -w kernel.yama.ptrace_scope=0 && /opt/intel/oneapi/vtune/2023.1.0/bin64/vtune-gui'
 
+alias scode1='{ IFS= read -r d && grep -Hrni "$d" /home/monal/Documents/code/bitcart1/src/navier_stokes_newest/*; } <<<'

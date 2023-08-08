@@ -1,0 +1,11 @@
+#%Module########################################################################
+##
+## jupyter modulefile
+##
+proc ModulesHelp { } {
+        puts stderr "\tSets up environment for jupyter,"
+}
+
+module-whatis   "sets up environment for jupyter"
+
+prepend-path PATH /home/monal/.local/bin/

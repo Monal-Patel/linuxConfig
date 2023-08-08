@@ -1,0 +1,14 @@
+#%Module########################################################################
+##
+## AMReX modulefile
+##
+proc ModulesHelp { } {
+        puts stderr "\tSets up environment for AMReX,"
+}
+
+module-whatis   "sets up environment for AMReX"
+
+module load cuda/12.1
+
+setenv AMREX_HOME /home/monal/Documents/code/amrsolver/lib/amrex
+setenv AMR_SOLVER /home/monal/Documents/code/amrsolver1

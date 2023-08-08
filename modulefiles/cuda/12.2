@@ -7,11 +7,10 @@ proc ModulesHelp { } {
         puts stderr "\tSets up environment for CUDA v$version,"
 }
 
-module-whatis   "sets up environment for CUDA 12.1"
+module-whatis   "sets up environment for CUDA 12.2"
 
 # variables
-set     version 12.1
+set     version 12.2
 
-prepend-path	PATH		  /usr/local/cuda-12.1/bin
-prepend-path	LD_LIBRARY_PATH	  /usr/local/cuda-12.1/lib64
-setenv          CUDA_HOME         /usr/local/cuda-12.1
+prepend-path	PATH		  /usr/local/cuda-12.2/bin
+prepend-path	LD_LIBRARY_PATH	  /usr/local/cuda-12.2/lib64

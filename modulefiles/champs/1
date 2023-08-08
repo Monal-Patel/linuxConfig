@@ -12,7 +12,7 @@ module-whatis   "sets up environment for CHAMPS"
 # local vars
 set CHAMPS_DIR0  /home/monal/Documents/code/bitcart
 set CHAMPS_DIR  /home/monal/Documents/code/bitcart1
-set KARMA_EXEC_PATH      $CHAMPS_DIR/tools/karma
+set KARMA_EXEC_PATH      $CHAMPS_DIR0/tools/karma
 
 ##### environement setup
 setenv CHAMPS_DIR           $CHAMPS_DIR 
@@ -48,6 +48,7 @@ prepend-path  LD_LIBRARY_PATH  $CHAMPS_DIR0/dependencies/petsc-3.6.4/arch-linux2
 prepend-path  PATH             $CHAMPS_DIR0/dependencies/petsc-3.6.4/bin
 prepend-path  CPATH            $CHAMPS_DIR0/dependencies/petsc-3.6.4/include
 prepend-path  CPATH            $CHAMPS_DIR0/dependencies/petsc-3.6.4/arch-linux2-c-debug/include
+setenv PETSC_DIR0              $CHAMPS_DIR0/dependencies/petsc-3.6.4
 
 # karma
 prepend-path  CPATH            $CHAMPS_DIR0/tools/karma/utilities/include
