@@ -11,7 +11,7 @@ module-whatis   "sets up environment for CHAMPS"
 
 # local vars
 set CHAMPS_DIR0  /home/monal/Documents/code/bitcart
-set CHAMPS_DIR  /home/monal/Documents/code/bitcart1
+set CHAMPS_DIR  /media/monal/main/code/bitcart1
 set KARMA_EXEC_PATH      $CHAMPS_DIR0/tools/karma
 
 ##### environement setup

@@ -24,4 +24,4 @@ alias fastmake='make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make -j 4;make
 
 alias vtune='source /opt/intel/oneapi/vtune/2023.1.0/env/vars.sh && sudo sysctl -w kernel.yama.ptrace_scope=0 && /opt/intel/oneapi/vtune/2023.1.0/bin64/vtune-gui'
 
-alias scode1='{ IFS= read -r d && grep -Hrni "$d" /home/monal/Documents/code/bitcart1/src/navier_stokes_newest/*; } <<<'
+alias scode1='{ IFS= read -r d && grep -Hrni "$d" /media/monal/main/code/bitcart1/src/navier_stokes_newest/*; } <<<'

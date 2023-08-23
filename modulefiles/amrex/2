@@ -11,4 +11,4 @@ module-whatis   "sets up environment for AMReX"
 module load cuda/12.1
 
 setenv AMREX_HOME /home/monal/Documents/code/amrsolver/lib/amrex
-setenv AMR_SOLVER /media/monal/main/code/amrsolver1
+setenv AMR_SOLVER /media/monal/main/code/amrsolver2
